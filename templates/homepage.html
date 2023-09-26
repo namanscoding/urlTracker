@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <table>
+            <tr>
+                <td>
+                    <button>
+                        <a href="{{ url_for('dashboard') }}">URL Tracker</a>
+                    </button>
+
+                </td>
+                <td>
+                    <button>
+                        <a href="{{ url_for('txtsim_dashboard') }}">Text Similarity</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

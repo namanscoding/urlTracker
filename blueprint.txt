@@ -1,0 +1,17 @@
+1) Input from a file
+2) Requesting data of URL
+3) Hashing of data and store in current hash
+4) Comparing current hash and previous hash(one to one)
+5) Output : Show the URL whose data has been changed
+
+
+UI Part:
+
+1)Import button(import from file) and store into database
+2)Add URL(int txt) & store into database
+3)View & delete existing URLs from the database
+4)Track button(Track all the URLS stored in database collectively)
+5)Track by time
+6)Reflect the changed URLs 
+
+Flask, postgres

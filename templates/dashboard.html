@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1></h1>
+<span>DB Conn: {{'False' if conn_info else 'True'}}</span>
+<h3>Data</h3>
+<div class="data">
+  <table>
+    <tr>
+      <td> <b> URL </b></td>
+      <td><b>Prev Hash</b></td>
+      <td><b>Time</b></td>
+      <td><b>Content</b></td>
+    </tr>
+    {% for i in data %}
+    <tr>
+      <td><a href="{{i[0]}}">{{i[0]}}</a></td>
+      <td>{{i[1]}}</td>
+      <td>{{i[3]}}</td>
+      <td>{{i[2]}}</td>
+    </tr>
+
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}

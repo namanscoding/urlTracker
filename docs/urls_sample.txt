@@ -1,0 +1,6 @@
+https://resplendent-pika-efeb47.netlify.app/,
+https://fascinating-cassata-607b7f.netlify.app/,
+https://fascinating-cassata-607b7f.netlify.app/,
+http://127.0.0.1:5000/add_urls,
+https://www.jch.org/patients-visitors/billing-insurance/transparency-of-hospital-charges/,
+jch.org/patients-visitors/billing-insurance/transparency-of-hospital-charges/

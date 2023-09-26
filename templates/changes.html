@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+</style>
+<div class="changes">
+  <h3>Changed Urls</h3>
+  <table>
+    <tr>
+      <td> <b> URL </b></td>
+      <td> <b> Current Hash </b></td>
+      <td><b>Previous Hash</b></td>
+      <td><b>Previous Time</b></td>
+      <td><b>Diff Content</b></td>
+    </tr>
+    {% for i in data %}
+    <tr>
+      <td><a href="{{i[0]}}">{{i[0]}}</a></td>
+      <td>{{i[3]}}</td>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[4]|safe}}</td>
+      
+    </tr>
+    {% endfor %}\
+
+
+ 
+
+
+
+
+
+
+  </table>
+  <table class="Legends" summary="">
+        <tbody><tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tbody><tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </tbody></table></td>
+             <td> <table border="" summary="Links">
+                      <tbody><tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </tbody></table></td> </tr>
+    </tbody></table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>URLTracker</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+  <div class="head">
+    <h1>Clar URL Tracker Dashboard </h1>
+    <div class="headconttainer">
+      <button class="button button1"> <a href="{{url_for('dashboard')}}">         Home </a> </button>
+      <button class="button button1"> <a href="{{url_for('import_from_file')}}">  Import URL from file </a> </button>
+      <button class="button button1"> <a href="{{url_for('add_urls')}}">          Add URLs </a> </button>
+      <button class="button button1"> <a href="{{url_for('view')}}">              View & Modify URLs List </a> </button>
+      <button class="button button1"> <a href="{{url_for('changes')}}">           Track All URLs </a> </button>
+      <button class="button button1"> <a href="{{url_for('change')}}">            Track Selected URLs </a></button>
+    </div>
+    <p></p>
+  </div>
+  <h1></h1>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+</html>

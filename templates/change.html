@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h4>Add single url or comma separated urls</h4>
+<form action="" method="post">
+    <p>
+        <input type="text" name="urls" value={% if url %} "{{url}}" {% else %} "" {% endif %} id="">
+    </p>
+    <button type="submit">Track</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+a {
+    color: black;
+    font: optional;
+    font-family: helvetica;
+    font-size: large;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 5px;
+    padding: 15px;
+
+}
+
+tr {
+    border: 1px solid black;
+    flex: 1 1 auto;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-color: burlywood;
+}
+
+.head {
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.headconttainer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+input {
+    background-color: beige;
+    border-radius: 35px;
+    border: none;
+    width: 500px;
+    height: 20px;
+}
+
+input::file-selector-button {
+    background-color: wheat;
+    border-radius: 35px;
+    border: none;
+}
+
+button {
+    background-color: beige;
+    border-radius: 35px;
+    border: none;
+}
+
+textarea {
+    background-color: beige;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    ;
+}
+
+.button1 {
+    flex: 1 1 auto;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+.Legends{
+    position: sticky;
+    top: 90%;
+    left:90%;
+}

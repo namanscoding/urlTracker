@@ -1,0 +1,12 @@
+ {% extends "base.html" %}
+{% block content %}
+<h3>ERROR !</h3>
+<h5>Go back and try again ! </h5>
+
+<ul>
+{% for i in message.split("\n") %}
+<li>{{i}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

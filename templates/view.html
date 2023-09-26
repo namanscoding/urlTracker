@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="data">
+  <form action="" method="post">
+    <table>
+      <tr>
+        <td> <b> URL </b></td>
+        <td><b>Prev Hash</b></td>
+        <td><b>Time</b></td>
+        <td><b>Options</b></td>
+      </tr>
+      {% for i in data %}
+      <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>
+          <button type="Submit" name="delete" value="{{i[0]}}"> Delete </button>
+          <button type="Submit" name="track" value="{{i[0]}}"> Track </button>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </form>
+</div>
+
+{% endblock %}
